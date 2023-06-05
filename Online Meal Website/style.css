@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(vegetable.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.services-container {
+    font-size: 21px;
+    padding-top: 9px;
+}
+
+#services {
+    margin: 33px;
+    display: flex;
+}
+
+.box {
+    height: 350px;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(252, 251, 251);
+    font-size: 17px;
+}
+
+.box img {
+    height: 55%;
+    margin: auto;
+    display: block;
+}
+
+.box p {
+    font-family: 'Bree Serif', serif;
+}
+
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('christmas.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client-section {
+    position: relative;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+.client-item img {
+    height: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact h1 {
+    font-size: 36px;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(watermel.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 18px 35px;
+}
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid rgb(247, 238, 238);
+    background-color: rgb(207, 93, 58);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
